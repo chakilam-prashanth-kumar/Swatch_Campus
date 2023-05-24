@@ -12,9 +12,19 @@ Drone Programming,Python,Deep Learning, Amazon Wdb Services.
 
 ![image](https://github.com/chakilam-prashanth-kumar/Swatch_Campus/assets/95711596/b476a825-16f9-44e6-90b0-5b7bbf046012)
 
-- Client is the user who is using the web site for marking the way points.
+- Client is the user who is using the website for marking the way points.
   Website Link: https://swachkmit.000webhostapp.com/#
 ![image](https://github.com/chakilam-prashanth-kumar/Swatch_Campus/assets/95711596/d41106a3-a097-45d2-abad-1c7451f69421)
-+ hi
++ After all way points are marked in the website, then the user click the Start Mission button, so all the waypoints information (latitute ,longetude co-ordenates) to Ground Station as Json via Web-socket. Then Ground Station will Broadcast the instructions to the Drone using Telemetry.
++ When the drone reacted a waypoint then  camera takes the picture.
++ Camera used: GoPro Hero 9 Black
++ After completing all the waypoints then RTL command is issued by the GroundStation, so drone comes to the starting location where it started the mission.
++ After completing the mission drone uploads the pictures in the FireBase(DataBase). Notify the
+Trash-Detection-Client(TDC) to start its work. 
++ TDC Fetchs the pictures from the FireBase and apply Detection algorithm on the images.
++ The model we used for detection is YOLO-v4.
++ Once the detection is completed the detected images are uploaded back to the firebase and TDC notify the user to collect the images using web-socket.
++ the WebSite will take the images from DataBase and display it to the end client.
+
 
 
