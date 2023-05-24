@@ -13,7 +13,7 @@ Drone Programming,Python,Deep Learning, Amazon Wdb Services.
 ![image](https://github.com/chakilam-prashanth-kumar/Swatch_Campus/assets/95711596/b476a825-16f9-44e6-90b0-5b7bbf046012)
 
 - Client is the user who is using the web site for marking the way points.
-  Website Link: (https://swachkmit.000webhostapp.com/#)
+  Website Link: https://swachkmit.000webhostapp.com/#
   
 
 
